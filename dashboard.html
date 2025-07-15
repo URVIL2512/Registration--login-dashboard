@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard - MERN Internship</title>
+    <link rel="stylesheet" href="css/dashboard.css">
+</head>
+<body>
+    <div class="dashboard-container">
+        <aside class="sidebar" id="sidebar">
+            <div class="sidebar-header">
+                <h2>Dashboard</h2>
+                <button class="sidebar-toggle" id="sidebarToggle">☰</button>
+            </div>
+            <ul class="nav-menu">
+                <li class="nav-item"><a href="#" class="nav-link active"><span class="nav-icon">🏠</span><span class="nav-text">Home</span></a></li>
+                <li class="nav-item"><a href="#" class="nav-link"><span class="nav-icon">👤</span><span class="nav-text">Profile</span></a></li>
+                <li class="nav-item"><a href="#" class="nav-link"><span class="nav-icon">⚙️</span><span class="nav-text">Settings</span></a></li>
+            </ul>
+        </aside>
+        <main class="main-content" id="mainContent">
+            <div class="topbar">
+                <div class="topbar-left">
+                    <h1>Welcome, <span id="userName">User</span>!</h1>
+                </div>
+                <div class="topbar-right">
+                    <div class="user-profile">
+                        <div class="user-avatar" id="userAvatar"></div>
+                    </div>
+                    <button class="logout-btn" id="logoutBtn">Logout</button>
+                </div>
+            </div>
+            <div class="content-area">
+                <div class="welcome-message">
+                    <h2>Hello, <span id="welcomeName">User</span>!</h2>
+                </div>
+                <div class="dashboard-grid">
+                    <div class="card profile-card">
+                        <div class="card-header">
+                            <div class="card-icon">👤</div>
+                            <div class="card-title">Profile</div>
+                        </div>
+                        <div class="profile-image-container">
+                            <div class="profile-image" id="profileImage"></div>
+                        </div>
+                        <div class="profile-info">
+                            <div class="info-item">
+                                <span class="info-label">Full Name</span>
+                                <span class="info-value" id="fullName"></span>
+                            </div>
+                            <div class="info-item">
+                                <span class="info-label">Email</span>
+                                <span class="info-value" id="email"></span>
+                            </div>
+                            <div class="info-item">
+                                <span class="info-label">Phone</span>
+                                <span class="info-value" id="phone"></span>
+                            </div>
+                            <div class="info-item">
+                                <span class="info-label">Gender</span>
+                                <span class="info-value" id="gender"></span>
+                            </div>
+                            <div class="info-item">
+                                <span class="info-label">Date of Birth</span>
+                                <span class="info-value" id="dob"></span>
+                            </div>
+                            <div class="info-item">
+                                <span class="info-label">Address</span>
+                                <span class="info-value" id="address"></span>
+                            </div>
+                            <div class="info-item">
+                                <span class="info-label">City</span>
+                                <span class="info-value" id="city"></span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card skills-card">
+                        <div class="card-header">
+                            <div class="card-icon">💡</div>
+                            <div class="card-title">Skills</div>
+                        </div>
+                        <div class="skills-list" id="skillsList"></div>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+    <script src="js/dashboard.js"></script>
+</body>
+</html> 
